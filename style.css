@@ -4,7 +4,7 @@
         }
 
         body{
-            background-color: chocolate;
+            background-color: #ADADAD;
         }
 
         .product-card{
@@ -15,6 +15,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            box-shadow: 0px 0px 12px 3px #888888;
         }
 
         .card-title{
@@ -53,19 +55,33 @@
         .product-image{
             border-radius: 10px;
             width: 300px;
+            height: 400px;
+            object-fit: cover;
 
+        }
+
+        .product-image-outfit{
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
         }
 
         .product-sale-image{
             width: 100px;
-            position: relative;
-            z-index: 2;
-            top: -605px;
-            left: -5px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
         }
 
         .card-button:hover{
             background-color: white;
             color: black;
             transform: scale(1.2);
+        }
+
+        .product-card-container{
+            display: flex;
+            justify-content: center;
+            gap: 200px;
         }
